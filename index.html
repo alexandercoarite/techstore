@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>TechStore</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <div class="texto-inicio">
+            <h2>Tecnología para todos</h2>
+            <p>Encuentra celulares, computadoras y accesorios al mejor precio.</p>
+            <button onclick="mostrarMensaje()">Ver productos</button>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2 class="titulo">Nuestros productos</h2>
+        <div class="productos">
+            <div class="tarjeta">
+                <img src="imagenes/laptop.jpg" alt="Laptop">
+                <h3>Laptop Gamer</h3>
+                <p>Excelente rendimiento para estudiar, trabajar y jugar.</p>
+                <p class="precio">Bs 5.500</p>
+                <button onclick="comprar('Laptop Gamer')">Comprar</button>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenes/celular.jpg" alt="Celular">
+                <h3>Smartphone</h3>
+                <p>Celular rápido con excelente cámara y batería.</p>
+                <p class="precio">Bs 2.500</p>
+                <button onclick="comprar('Smartphone')">Comprar</button>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenes/audifonos.jpg" alt="Audífonos">
+                <h3>Audífonos</h3>
+                <p>Sonido de alta calidad para música, juegos y llamadas.</p>
+                <p class="precio">Bs 350</p>
+                <button onclick="comprar('Audífonos')">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>TechStore es una tienda de ejemplo creada para demostrar el funcionamiento básico de una página web utilizando HTML, CSS y JavaScript.</p>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form onsubmit="enviarFormulario(event)">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 TechStore | Página web de ejemplo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
